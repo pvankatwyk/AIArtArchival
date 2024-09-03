@@ -1,0 +1,132 @@
+[
+    {
+        "image": "gothic.jpg",
+        "caption": "a painting of two people standing in front of a house",
+        "keywords": {
+            "nouns": [
+                "painting",
+                "people",
+                "front",
+                "house"
+            ],
+            "verbs": [
+                "standing"
+            ]
+        }
+    },
+    {
+        "image": "IMG_3921.png",
+        "caption": "a painting of a landscape with a lake and mountains in the background",
+        "keywords": {
+            "nouns": [
+                "painting",
+                "landscape",
+                "lake",
+                "mountains",
+                "background"
+            ],
+            "verbs": []
+        }
+    },
+    {
+        "image": "IMG_3928.png",
+        "caption": "a drawing of a ship in the ocean with a man in a boat on the other side of the ship",
+        "keywords": {
+            "nouns": [
+                "drawing",
+                "ship",
+                "ocean",
+                "man",
+                "boat",
+                "side",
+                "ship"
+            ],
+            "verbs": []
+        }
+    },
+    {
+        "image": "last_supper.jpg",
+        "caption": "a painting of the last supper of jesus, with a group of people sitting at a long table in front of it",
+        "keywords": {
+            "nouns": [
+                "painting",
+                "supper",
+                "jesus",
+                "group",
+                "people",
+                "table",
+                "front"
+            ],
+            "verbs": [
+                "sitting"
+            ]
+        }
+    },
+    {
+        "image": "scream.jpg",
+        "caption": "a painting of a person standing on a bridge with a sunset in the background",
+        "keywords": {
+            "nouns": [
+                "painting",
+                "person",
+                "bridge",
+                "sunset",
+                "background"
+            ],
+            "verbs": [
+                "standing"
+            ]
+        }
+    },
+    {
+        "image": "seurat.jpg",
+        "caption": "a painting of a crowd of people in a park",
+        "keywords": {
+            "nouns": [
+                "painting",
+                "crowd",
+                "people",
+                "park"
+            ],
+            "verbs": []
+        }
+    },
+    {
+        "image": "starry_night.jpg",
+        "caption": "a painting of a starry night with a city in the background",
+        "keywords": {
+            "nouns": [
+                "painting",
+                "night",
+                "city",
+                "background"
+            ],
+            "verbs": []
+        }
+    },
+    {
+        "image": "time.jpg",
+        "caption": "a painting of a man and a dog on a beach",
+        "keywords": {
+            "nouns": [
+                "painting",
+                "man",
+                "dog",
+                "beach"
+            ],
+            "verbs": []
+        }
+    },
+    {
+        "image": "vermeer_portrait.jpg",
+        "caption": "a painting of a girl with a pearl",
+        "keywords": {
+            "nouns": [
+                "painting",
+                "girl",
+                "pearl"
+            ],
+            "verbs": []
+        }
+    }
+]

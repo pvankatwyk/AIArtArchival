@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "aiartarchival"
+version = "0.1.0"
+description = ""
+authors = ["Peter Van Katwyk <pvankatwyk@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+spacy = "^3.7.6"
+transformers = "^4.44.2"
+pillow = "^10.4.0"
+torch = "^2.4.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
