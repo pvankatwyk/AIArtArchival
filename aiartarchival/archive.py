@@ -6,7 +6,7 @@ from PIL import Image
 import warnings
 warnings.filterwarnings('ignore')
 
-artwork_directory = "C:/Users/pvank/Downloads/art"
+artwork_directory = "./artwork/"
 output_file = "captions_and_keywords.json"
 
 # Load spaCy's English model
