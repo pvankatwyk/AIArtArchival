@@ -99,5 +99,7 @@ The output file (`captions_and_keywords.json`) will look something like this:
 ## Troubleshooting
 
 - **spaCy Model Download**: If you get an error about spaCy not finding the language model, ensure you've followed Step 3 above.
+  
+- **Filepath Errors**: If you get an error related to a file, check to make sure the artwork directory exists, and that the output file you specify ends in `.json`.
 
 - **Other Errors**: If you encounter any issues, please reach out for support.
