@@ -5,9 +5,18 @@ from transformers import BlipProcessor, BlipForConditionalGeneration
 from PIL import Image
 import warnings
 warnings.filterwarnings('ignore')
+import yaml
 
-artwork_directory = "./artwork/"
-output_file = "captions_and_keywords.json"
+# load in the config file to get the filepaths
+with open('config.yaml', 'r') as file:
+    data = yaml.safe_load(file)
+
+artwork_directory = data['artwork_directory']
+output_file = data['output_file']
+
+# give an error if the output file isn't a json
+if not output_file.endswith('.json'):
+    raise NameError("output_file must end in .json")
 
 # Load spaCy's English model
 # if you get an error here, you will need to run the following line in terminal:
@@ -15,6 +24,7 @@ output_file = "captions_and_keywords.json"
 try:
   nlp = spacy.load("en_core_web_sm")
 except:
+  # if that didn't work, download the english language model
   import subprocess
   import sys
   subprocess.check_call([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
@@ -52,6 +62,7 @@ for image_name in os.listdir(image_dir):
             no_repeat_ngram_size=2,  # avoid repeating n-grams
             length_penalty=1.5  # increase this for longer captions
         )
+        # decode model output to human readable
         caption = processor.decode(out[0], skip_special_tokens=True)
 
         # Extract nouns and verbs
@@ -65,11 +76,11 @@ for image_name in os.listdir(image_dir):
         })
 
         # Optional: print the caption and keywords to see progress
-        print(f"Caption for {image_name}: {caption}")
+        print(f"\nCaption for {image_name}: {caption}")
         print(f"Keywords: {keywords}")
 
 # Save all results to a JSON file
 with open(output_file, 'w') as f:
     json.dump(results, f, indent=4)
 
-print(f"Captions and keywords saved to {output_file}")
+print(f"\nCaptions and keywords saved to {output_file}")

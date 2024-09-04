@@ -1,0 +1,2 @@
+artwork_directory: "./artwork/"
+output_file: "captions_and_keywords.json"
